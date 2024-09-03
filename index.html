@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3881267_wfv3iyzbijg.css">
+</head>
+<style>
+    section {
+        position: relative;
+        height: 500px;
+        width: 780px;
+        border: 1px solid;
+        margin: 100px auto;
+    }
+
+    #img {
+        height: 100%;
+        width: 100%;
+        background-size: 100% 100%;
+    }
+
+    p {
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        transform: translate(-50%, -50%);
+    }
+
+    i {
+        height: 15px;
+        width: 15px;
+        background-color: gray;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    i:nth-child(1) {
+        background-color: white;
+    }
+
+    i:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .left,
+    .right {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 50px;
+        font-weight: bolder;
+        position: absolute;
+        top: 50%;
+        font-weight: 500;
+    }
+
+    .left {
+        left: 0px;
+        transform: translate(15%, -50%);
+    }
+
+    .right {
+        right: 0px;
+        transform: translate(-15%, -50%);
+    }
+</style>
+
+<body>
+    <section>
+        <span class="left iconfont icon-anniu_jiantouxiangzuo"></span>
+        <img src="./img/冬至竹林1.jpg" alt="" id="img">
+        <span class="right iconfont icon-anniu-jiantouxiangyou"></span>
+        <p></p>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
